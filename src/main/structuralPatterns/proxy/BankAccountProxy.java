@@ -1,5 +1,7 @@
 package main.structuralPatterns.proxy;
 
+
+
 public class BankAccountProxy implements BankAccount {
     RealBankAccount realBankAccount;
     String password;
@@ -16,6 +18,7 @@ public class BankAccountProxy implements BankAccount {
         }
         else {
             System.out.println("Incorrect password! Try Again");
+            System.exit(-1);
         }
     }
 
